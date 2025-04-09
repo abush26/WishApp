@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="wishCartApp">
+<head>
+    <title>WishCart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-controller="WishCartController">
+    <div class="container">
+        <h1>WishCart</h1>
+        <ul>
+            <li ng-repeat="item in wishList">{{ item }}</li>
+        </ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
